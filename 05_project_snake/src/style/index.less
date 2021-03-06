@@ -16,9 +16,9 @@ body{
 // 设置主窗口的样式
 #main{
   width: 360px;
-  height: 420px;
+  height: 520px;
   background-color: @bg-color;
-  margin: 100px auto;
+  margin: 40px auto;
   border: 10px solid black;
   border-radius: 40px;
 
@@ -84,5 +84,62 @@ body{
     display: flex;
     // 设置主轴的对齐方式
     justify-content: space-between;
+  }
+
+  // 操作盘
+  #handler{
+    width: 150px;
+    height: 120px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    // background-color: yellow;
+
+    #up{
+      height: 40px;
+      margin: auto;
+
+      &>div{
+        width: 50px;
+        height: 30px;
+        background-color: #efefef;
+        border: 1px solid #767676;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 30px;
+      }
+    }
+
+    #left-right{
+      height: 40px;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+
+      &>div{
+        width: 50px;
+        height: 30px;
+        background-color: #efefef;
+        border: 1px solid #767676;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 50px;
+      }
+    }
+
+    #down{
+      height: 40px;
+      margin: auto;
+
+      &>div{
+        width: 50px;
+        height: 30px;
+        background-color: #efefef;
+        border: 1px solid #767676;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 30px;
+      }
+    }
   }
 }

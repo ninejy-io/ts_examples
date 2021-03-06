@@ -29,6 +29,21 @@ class GameControl {
   init() {
     // 绑定键盘按键按下的事件
     document.addEventListener('keydown', this.keydownHandler.bind(this));
+
+    // 游戏界面上的方向按钮操作
+    document.getElementById('up')!.onclick = () => {
+      this.direction = 'ArrowUp';
+    }
+    document.getElementById('down')!.onclick = () => {
+      this.direction = 'ArrowDown';
+    }
+    document.getElementById('left')!.onclick = () => {
+      this.direction = 'ArrowLeft';
+    }
+    document.getElementById('right')!.onclick = () => {
+      this.direction = 'ArrowRight';
+    }
+
     this.run();
   }
 
